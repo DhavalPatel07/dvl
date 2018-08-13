@@ -27,6 +27,14 @@ h6 { font-size: 18px; line-height: 70px; }
 
 .white-color h1, .white-color h2, .white-color h3, .white-color h4, .white-color h5, .white-color h6, .white-color span, .white-color strong, .white-color a, .white-color p, .white-color label, .white-color pre, .white-color { color: #ffffff; }
 .bg-img { background-repeat: no-repeat; background-position: center center; background-size: cover; }
+/* Go Top CSS */
+.go-up { background: #b48f2e; bottom: 5px; cursor: pointer; width: 45px; height: 45px; line-height: 40px; position: fixed; right: 20px; bottom: -60px; text-align: center; z-index: 999; transition: all 0.5s ease-in-out; border-radius: 50px 50px 0px 0px; -moz-border-radius: 50px 50px 0px 0px; -webkit-border-radius: 50px 50px 0px 0px; }
+.go-up img { padding-top: 14px; max-width: 12px; width: 100%; }
+.go-up:hover {
+    transition: all 0.3s ease-in-out;
+    background-color: #323d53;
+	height: 50px;
+}
 /* ~~~~~~~~~~ Flex Grid ~~~~~~~~~~ */
 .col {
 	display: -webkit-box;
@@ -259,7 +267,19 @@ h6 { font-size: 18px; line-height: 70px; }
 .hero-banner {
 	display: table;
 	width: 100%;
+	overflow:hidden;
 }
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%; 
+    min-height: 100%;
+}
+#Customer_logo,
+#HeroSlider,
+#Products { position:relative; z-index: 100; background:#fff; }
+
 .banner-contain {
 	display: table-cell;
     vertical-align: middle;
@@ -386,7 +406,11 @@ h6 { font-size: 18px; line-height: 70px; }
 .about-section h2 {
 	padding-bottom: 30px;
 }
-
+.bg-image {
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
 #Products {
 	padding-top: 40px;
 	padding-bottom: 40px;
@@ -398,7 +422,11 @@ h6 { font-size: 18px; line-height: 70px; }
 .products-images .flex-item {
 	width: 25%;
 }
+.products-images h4 {
+	padding-top:10px;
+	padding-bottom: 20px;
+	line-height: normal;
+}
 .products-image {
-	height: 400px;
-	background: #000;
+	min-height: 400px;
 }

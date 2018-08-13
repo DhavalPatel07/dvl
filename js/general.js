@@ -1,4 +1,18 @@
 var $=jQuery.noConflict();
+	// Back to Top
+	jQuery(window).scroll(function () {
+		if(jQuery(this).scrollTop() > 300 ) {
+			jQuery(".go-up").css("bottom","0px");
+		}
+		else {
+			jQuery(".go-up").css("bottom","-60px");
+		}
+	});
+	jQuery(".go-up").click(function(){
+		jQuery("html,body").animate({scrollTop:0},500);
+		return false;
+	});
+	
 $(document).ready(function() {
 	var owl = $('#HeroSlider');
     owl.owlCarousel({
